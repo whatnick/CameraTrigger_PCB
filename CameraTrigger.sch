@@ -4581,64 +4581,6 @@ Source: http://www.alldatasheet.com/datasheet-pdf/pdf/32424/TOSHIBA/TLP281.html2
 </deviceset>
 </devicesets>
 </library>
-<library name="Seeed-OPL-ic">
-<packages>
-<package name="TO-220">
-<wire x1="-5.715" y1="1.905" x2="5.715" y2="1.905" width="0.254" layer="21"/>
-<wire x1="5.715" y1="1.905" x2="5.715" y2="-6.985" width="0.254" layer="21"/>
-<wire x1="5.715" y1="-6.985" x2="-5.715" y2="-6.985" width="0.254" layer="21"/>
-<wire x1="-5.715" y1="-6.985" x2="-5.715" y2="1.905" width="0.254" layer="21"/>
-<pad name="1" x="-2.54" y="-11.43" drill="1.27" diameter="2.032" shape="long" rot="R90"/>
-<pad name="2" x="0" y="-11.43" drill="1.27" diameter="2.032" shape="long" rot="R90"/>
-<pad name="3" x="2.54" y="-11.43" drill="1.27" diameter="2.032" shape="long" rot="R90"/>
-<pad name="HEAT" x="0" y="6.35" drill="3.2004" diameter="7.62"/>
-<text x="-1.905" y="-0.635" size="0.889" layer="25" ratio="11">&gt;name</text>
-<text x="-1.905" y="-3.175" size="0.889" layer="27" ratio="11">&gt;value</text>
-<rectangle x1="-5.715" y1="-13.335" x2="5.715" y2="10.795" layer="39"/>
-</package>
-</packages>
-<symbols>
-<symbol name="PMIC-CJ78M05">
-<text x="-6.35" y="5.08" size="1.27" layer="95" ratio="10">&gt;name</text>
-<text x="0" y="5.08" size="1.27" layer="96" ratio="10">&gt;value</text>
-<pin name="GND" x="0" y="-8.89" length="short" rot="R90"/>
-<pin name="OUT" x="11.43" y="0" length="short" rot="R180"/>
-<pin name="IN" x="-11.43" y="0" length="short"/>
-<wire x1="-7.62" y1="3.81" x2="7.62" y2="3.81" width="0.1524" layer="94"/>
-<wire x1="7.62" y1="3.81" x2="7.62" y2="0" width="0.1524" layer="94"/>
-<wire x1="7.62" y1="0" x2="7.62" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="7.62" y1="-5.08" x2="0" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="0" y1="-5.08" x2="-7.62" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="0" width="0.1524" layer="94"/>
-<wire x1="-7.62" y1="0" x2="-7.62" y2="3.81" width="0.1524" layer="94"/>
-<wire x1="8.89" y1="0" x2="7.62" y2="0" width="0.1524" layer="94"/>
-<wire x1="0" y1="-6.35" x2="0" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="-7.62" y1="0" x2="-8.89" y2="0" width="0.1524" layer="94"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="PMIC-L7805CV-DG(TO-220)" prefix="U" uservalue="yes">
-<description>310030073</description>
-<gates>
-<gate name="G$1" symbol="PMIC-CJ78M05" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="TO-220">
-<connects>
-<connect gate="G$1" pin="GND" pad="2 HEAT"/>
-<connect gate="G$1" pin="IN" pad="1"/>
-<connect gate="G$1" pin="OUT" pad="3"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MPN" value="L7805CV-DG"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="microbuilder">
 <description>&lt;h2&gt;&lt;b&gt;microBuilder.eu&lt;/b&gt; Eagle Footprint Library&lt;/h2&gt;
 
@@ -6301,6 +6243,85 @@ Source: www.st.com, BAT60J.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="carrilib">
+<description>&lt;b&gt; The EAGLE Library of Brian Carrigan&lt;/b&gt;
+&lt;br&gt; The most updated version of this library can be found at my &lt;a href="http://github.com/carrigan"&gt; Github.&lt;/a&gt;</description>
+<packages>
+<package name="OKI-78SRH">
+<description>OKI-78SR-3.3/1.5W36H&lt;br&gt;
+OKI-78SR-5/1.5W36H</description>
+<wire x1="5.08" y1="-1.27" x2="-5.08" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-1.27" x2="-5.08" y2="5.08" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="10.16" x2="-5.08" y2="15.24" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="15.24" x2="5.08" y2="15.24" width="0.127" layer="21"/>
+<wire x1="5.08" y1="15.24" x2="5.08" y2="10.16" width="0.127" layer="21"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="10.16" x2="-2.54" y2="12.7" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="12.7" x2="2.54" y2="12.7" width="0.127" layer="21"/>
+<wire x1="2.54" y1="12.7" x2="5.08" y2="10.16" width="0.127" layer="21"/>
+<wire x1="5.08" y1="10.16" x2="5.08" y2="5.08" width="0.127" layer="21"/>
+<wire x1="5.08" y1="5.08" x2="2.54" y2="2.54" width="0.127" layer="21"/>
+<wire x1="2.54" y1="2.54" x2="-2.54" y2="2.54" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="2.54" x2="-5.08" y2="5.08" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="10.16" width="0.127" layer="21"/>
+<pad name="3" x="-2.54" y="0" drill="1.016"/>
+<pad name="2" x="0" y="0" drill="1.016"/>
+<pad name="1" x="2.54" y="0" drill="1.016"/>
+<text x="-1.016" y="-2.794" size="1.27" layer="25">&gt;NAME</text>
+<wire x1="-5.08" y1="-1.27" x2="5.08" y2="-1.27" width="0.127" layer="51"/>
+<wire x1="5.08" y1="-1.27" x2="5.08" y2="5.08" width="0.127" layer="51"/>
+<wire x1="5.08" y1="10.16" x2="5.08" y2="15.24" width="0.127" layer="51"/>
+<wire x1="5.08" y1="15.24" x2="-5.08" y2="15.24" width="0.127" layer="51"/>
+<wire x1="-5.08" y1="15.24" x2="-5.08" y2="10.16" width="0.127" layer="51"/>
+<wire x1="-5.08" y1="10.16" x2="-5.08" y2="5.08" width="0.127" layer="51"/>
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="-1.27" width="0.127" layer="51"/>
+<wire x1="-5.08" y1="10.16" x2="-2.54" y2="12.7" width="0.127" layer="51"/>
+<wire x1="-2.54" y1="12.7" x2="2.54" y2="12.7" width="0.127" layer="51"/>
+<wire x1="2.54" y1="12.7" x2="5.08" y2="10.16" width="0.127" layer="51"/>
+<wire x1="5.08" y1="10.16" x2="5.08" y2="5.08" width="0.127" layer="51"/>
+<wire x1="5.08" y1="5.08" x2="2.54" y2="2.54" width="0.127" layer="51"/>
+<wire x1="2.54" y1="2.54" x2="-2.54" y2="2.54" width="0.127" layer="51"/>
+<wire x1="-2.54" y1="2.54" x2="-5.08" y2="5.08" width="0.127" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="5V_REG">
+<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="2.54" x2="10.16" y2="2.54" width="0.254" layer="94"/>
+<wire x1="10.16" y1="2.54" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<pin name="VI" x="-7.62" y="0" length="short"/>
+<pin name="GND" x="2.54" y="-7.62" length="short" rot="R90"/>
+<pin name="VO" x="12.7" y="0" length="short" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="DCDC_OKI-78SR">
+<description>4.95W DC/DC Converter
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt; Manufacturer:&lt;/b&gt;&lt;br&gt;
+Murata
+&lt;br&gt;&lt;br&gt;&lt;b&gt;Part Number:&lt;/b&gt;&lt;br&gt;
+OKI-78SR-5/1.5-W36H-C&lt;br&gt;
+OKI-78SR-3.3/1.5-W36H-C</description>
+<gates>
+<gate name="G$1" symbol="5V_REG" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="OKI-78SRH">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="VI" pad="1"/>
+<connect gate="G$1" pin="VO" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 <attribute name="CNAME" value="Aerometrex Multiple Camera Trigger"/>
@@ -6333,7 +6354,6 @@ Source: www.st.com, BAT60J.pdf</description>
 <part name="J8" library="Seeed-OPL-Connector" deviceset="DIP-FEMALE-JST(3P-2.54)" device="" value="3p-2.54"/>
 <part name="U2" library="PCF8574" deviceset="PCF8574_PW_20" device=""/>
 <part name="JP1" library="pinhead" deviceset="PINHD-1X7" device="" value="KEYPAD"/>
-<part name="U3" library="Seeed-OPL-ic" deviceset="PMIC-L7805CV-DG(TO-220)" device="" value="DC-DC Switching"/>
 <part name="BAT_OUT" library="Seeed-OPL-Connector" deviceset="DIP-JST-2P-2.0" device="" value="2p-2.0"/>
 <part name="BAT_IN" library="Seeed-OPL-Connector" deviceset="DIP-JST-2P-2.0" device="" value="2p-2.0"/>
 <part name="EXT_POW" library="Seeed-OPL-Connector" deviceset="DIP-FEMALE-JST(3P-2.54)" device="" value="3p-2.54"/>
@@ -6355,6 +6375,7 @@ Source: www.st.com, BAT60J.pdf</description>
 <part name="U$7" library="microbuilder" deviceset="GND" device=""/>
 <part name="M1" library="adafruit" deviceset="ARDUINO_R3_ICSP" device=""/>
 <part name="D1" library="diode" deviceset="BAT60J" device=""/>
+<part name="OKI-78SR-5" library="carrilib" deviceset="DCDC_OKI-78SR" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6400,7 +6421,6 @@ Source: www.st.com, BAT60J.pdf</description>
 <instance part="J8" gate="G$1" x="244.856" y="40.132" rot="R90"/>
 <instance part="U2" gate="A" x="175.26" y="165.1"/>
 <instance part="JP1" gate="A" x="251.46" y="152.4" rot="MR180"/>
-<instance part="U3" gate="G$1" x="31.75" y="67.31"/>
 <instance part="BAT_OUT" gate="G$1" x="30.48" y="38.1" smashed="yes">
 <attribute name="NAME" x="41.91" y="34.29" size="1.27" layer="95" ratio="10" rot="R90"/>
 </instance>
@@ -6434,6 +6454,7 @@ Source: www.st.com, BAT60J.pdf</description>
 <instance part="U$7" gate="G$1" x="231.14" y="152.4" rot="R90"/>
 <instance part="M1" gate="G$1" x="10.16" y="116.84"/>
 <instance part="D1" gate="G$1" x="48.514" y="67.31"/>
+<instance part="OKI-78SR-5" gate="G$1" x="29.21" y="67.31"/>
 </instances>
 <busses>
 </busses>
@@ -6775,7 +6796,6 @@ Source: www.st.com, BAT60J.pdf</description>
 <pinref part="U$7" gate="G$1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="U3" gate="G$1" pin="GND"/>
 <wire x1="31.75" y1="55.118" x2="31.75" y2="58.42" width="0.1524" layer="91"/>
 <junction x="31.75" y="55.118"/>
 <pinref part="U$5" gate="G$1" pin="GND"/>
@@ -6783,6 +6803,8 @@ Source: www.st.com, BAT60J.pdf</description>
 <wire x1="14.732" y1="62.23" x2="14.986" y2="62.23" width="0.1524" layer="91"/>
 <wire x1="14.986" y1="62.23" x2="14.986" y2="55.118" width="0.1524" layer="91"/>
 <wire x1="31.75" y1="55.118" x2="14.986" y2="55.118" width="0.1524" layer="91"/>
+<pinref part="OKI-78SR-5" gate="G$1" pin="GND"/>
+<wire x1="31.75" y1="59.69" x2="31.75" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="25.4" y1="172.72" x2="25.4" y2="175.26" width="0.1524" layer="91"/>
@@ -6992,9 +7014,11 @@ Source: www.st.com, BAT60J.pdf</description>
 </net>
 <net name="VEXT" class="1">
 <segment>
-<pinref part="U3" gate="G$1" pin="IN"/>
 <pinref part="EXT_POW" gate="G$1" pin="P$3"/>
 <wire x1="20.32" y1="67.31" x2="14.732" y2="67.31" width="0.1524" layer="91"/>
+<pinref part="OKI-78SR-5" gate="G$1" pin="VI"/>
+<wire x1="21.59" y1="67.31" x2="20.574" y2="67.31" width="0.1524" layer="91"/>
+<wire x1="20.574" y1="67.31" x2="20.32" y2="67.31" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VIN" class="1">
@@ -7083,9 +7107,10 @@ Source: www.st.com, BAT60J.pdf</description>
 </net>
 <net name="N$2" class="1">
 <segment>
-<pinref part="U3" gate="G$1" pin="OUT"/>
 <wire x1="43.18" y1="67.31" x2="45.974" y2="67.31" width="0.1524" layer="91"/>
 <pinref part="D1" gate="G$1" pin="A"/>
+<pinref part="OKI-78SR-5" gate="G$1" pin="VO"/>
+<wire x1="41.91" y1="67.31" x2="43.18" y2="67.31" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

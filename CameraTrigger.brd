@@ -527,23 +527,6 @@ Source: http://www.semicon.toshiba.co.jp/td/en/Opto/Photocoupler/en_20050928_TLP
 </package>
 </packages>
 </library>
-<library name="Seeed-OPL-ic">
-<packages>
-<package name="TO-220">
-<wire x1="-5.715" y1="1.905" x2="5.715" y2="1.905" width="0.254" layer="21"/>
-<wire x1="5.715" y1="1.905" x2="5.715" y2="-6.985" width="0.254" layer="21"/>
-<wire x1="5.715" y1="-6.985" x2="-5.715" y2="-6.985" width="0.254" layer="21"/>
-<wire x1="-5.715" y1="-6.985" x2="-5.715" y2="1.905" width="0.254" layer="21"/>
-<pad name="1" x="-2.54" y="-11.43" drill="1.27" diameter="2.032" shape="long" rot="R90"/>
-<pad name="2" x="0" y="-11.43" drill="1.27" diameter="2.032" shape="long" rot="R90"/>
-<pad name="3" x="2.54" y="-11.43" drill="1.27" diameter="2.032" shape="long" rot="R90"/>
-<pad name="HEAT" x="0" y="6.35" drill="3.2004" diameter="7.62"/>
-<text x="-1.905" y="-0.635" size="0.889" layer="25" ratio="11">&gt;name</text>
-<text x="-1.905" y="-3.175" size="0.889" layer="27" ratio="11">&gt;value</text>
-<rectangle x1="-5.715" y1="-13.335" x2="5.715" y2="10.795" layer="39"/>
-</package>
-</packages>
-</library>
 <library name="microbuilder">
 <description>&lt;h2&gt;&lt;b&gt;microBuilder.eu&lt;/b&gt; Eagle Footprint Library&lt;/h2&gt;
 
@@ -753,6 +736,48 @@ Source: www.st.com, BAT60J.pdf</description>
 <rectangle x1="-1.35" y1="-0.15" x2="-0.8" y2="0.15" layer="51"/>
 <rectangle x1="0.8" y1="-0.15" x2="1.35" y2="0.15" layer="51"/>
 <rectangle x1="-0.85" y1="-0.55" x2="-0.05" y2="0.55" layer="51"/>
+</package>
+</packages>
+</library>
+<library name="carrilib">
+<description>&lt;b&gt; The EAGLE Library of Brian Carrigan&lt;/b&gt;
+&lt;br&gt; The most updated version of this library can be found at my &lt;a href="http://github.com/carrigan"&gt; Github.&lt;/a&gt;</description>
+<packages>
+<package name="OKI-78SRH">
+<description>OKI-78SR-3.3/1.5W36H&lt;br&gt;
+OKI-78SR-5/1.5W36H</description>
+<wire x1="5.08" y1="-1.27" x2="-5.08" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-1.27" x2="-5.08" y2="5.08" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="10.16" x2="-5.08" y2="15.24" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="15.24" x2="5.08" y2="15.24" width="0.127" layer="21"/>
+<wire x1="5.08" y1="15.24" x2="5.08" y2="10.16" width="0.127" layer="21"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="10.16" x2="-2.54" y2="12.7" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="12.7" x2="2.54" y2="12.7" width="0.127" layer="21"/>
+<wire x1="2.54" y1="12.7" x2="5.08" y2="10.16" width="0.127" layer="21"/>
+<wire x1="5.08" y1="10.16" x2="5.08" y2="5.08" width="0.127" layer="21"/>
+<wire x1="5.08" y1="5.08" x2="2.54" y2="2.54" width="0.127" layer="21"/>
+<wire x1="2.54" y1="2.54" x2="-2.54" y2="2.54" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="2.54" x2="-5.08" y2="5.08" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="10.16" width="0.127" layer="21"/>
+<pad name="3" x="-2.54" y="0" drill="1.016"/>
+<pad name="2" x="0" y="0" drill="1.016"/>
+<pad name="1" x="2.54" y="0" drill="1.016"/>
+<text x="-1.016" y="-2.794" size="1.27" layer="25">&gt;NAME</text>
+<wire x1="-5.08" y1="-1.27" x2="5.08" y2="-1.27" width="0.127" layer="51"/>
+<wire x1="5.08" y1="-1.27" x2="5.08" y2="5.08" width="0.127" layer="51"/>
+<wire x1="5.08" y1="10.16" x2="5.08" y2="15.24" width="0.127" layer="51"/>
+<wire x1="5.08" y1="15.24" x2="-5.08" y2="15.24" width="0.127" layer="51"/>
+<wire x1="-5.08" y1="15.24" x2="-5.08" y2="10.16" width="0.127" layer="51"/>
+<wire x1="-5.08" y1="10.16" x2="-5.08" y2="5.08" width="0.127" layer="51"/>
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="-1.27" width="0.127" layer="51"/>
+<wire x1="-5.08" y1="10.16" x2="-2.54" y2="12.7" width="0.127" layer="51"/>
+<wire x1="-2.54" y1="12.7" x2="2.54" y2="12.7" width="0.127" layer="51"/>
+<wire x1="2.54" y1="12.7" x2="5.08" y2="10.16" width="0.127" layer="51"/>
+<wire x1="5.08" y1="10.16" x2="5.08" y2="5.08" width="0.127" layer="51"/>
+<wire x1="5.08" y1="5.08" x2="2.54" y2="2.54" width="0.127" layer="51"/>
+<wire x1="2.54" y1="2.54" x2="-2.54" y2="2.54" width="0.127" layer="51"/>
+<wire x1="-2.54" y1="2.54" x2="-5.08" y2="5.08" width="0.127" layer="51"/>
 </package>
 </packages>
 </library>
@@ -1030,11 +1055,6 @@ design rules under a new name.</description>
 <attribute name="NAME" x="26.5938" y="36.2712" size="1" layer="25" font="vector" ratio="21" rot="R270"/>
 <attribute name="VALUE" x="21.59" y="36.195" size="1" layer="27" rot="R270"/>
 </element>
-<element name="U3" library="Seeed-OPL-ic" package="TO-220" value="DC-DC Switching" x="15.875" y="37.465" smashed="yes">
-<attribute name="MPN" value="L7805CV-DG" x="15.875" y="37.465" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="11.43" y="49.53" size="1" layer="25" font="vector" ratio="21"/>
-<attribute name="VALUE" x="13.97" y="34.29" size="1" layer="27" ratio="11"/>
-</element>
 <element name="BAT_OUT" library="Seeed-OPL-Connector" package="H2-2.0-6X4.5MM" value="2p-2.0" x="5.08" y="5.08" smashed="yes" rot="R270">
 <attribute name="NAME" x="1.905" y="2.54" size="1" layer="25" font="vector" ratio="21" rot="R90"/>
 <attribute name="NAME" x="5.207" y="4.445" size="0.254" layer="33" ratio="10" rot="R90"/>
@@ -1092,16 +1112,16 @@ design rules under a new name.</description>
 <attribute name="NAME" x="64.655" y="34.545" size="1" layer="25" font="vector" ratio="21" rot="R90"/>
 <attribute name="VALUE" x="68.04" y="33.91" size="1" layer="27" rot="R90"/>
 </element>
+<element name="OKI-78SR-5" library="carrilib" package="OKI-78SRH" value="DCDC_OKI-78SR" x="15.24" y="43.18" smashed="yes" rot="R180">
+<attribute name="NAME" x="20.066" y="45.974" size="1.27" layer="25" rot="R180"/>
+</element>
 </elements>
 <signals>
 <signal name="VEXT" class="1">
-<contactref element="U3" pad="1"/>
 <contactref element="EXT_POW" pad="3"/>
-<wire x1="5.715" y1="41.0337" x2="5.715" y2="44.3484" width="0.4064" layer="1"/>
-<wire x1="13.2588" y1="33.4899" x2="5.715" y2="41.0337" width="0.4064" layer="1"/>
-<wire x1="13.2588" y1="26.0604" x2="13.2588" y2="33.4899" width="0.4064" layer="1"/>
-<wire x1="5.715" y1="44.3484" x2="5.715" y2="44.45" width="0.4064" layer="1"/>
-<wire x1="13.2588" y1="26.0604" x2="13.335" y2="26.035" width="0.4064" layer="1"/>
+<contactref element="OKI-78SR-5" pad="1"/>
+<wire x1="5.715" y1="43.18" x2="12.7" y2="43.18" width="0.4064" layer="1"/>
+<wire x1="5.715" y1="44.45" x2="5.715" y2="43.18" width="0.4064" layer="1"/>
 </signal>
 <signal name="D2">
 <contactref element="R1" pad="2"/>
@@ -1404,8 +1424,6 @@ design rules under a new name.</description>
 <contactref element="U2" pad="7"/>
 <contactref element="U2" pad="9"/>
 <contactref element="U2" pad="15"/>
-<contactref element="U3" pad="HEAT"/>
-<contactref element="U3" pad="2"/>
 <contactref element="BAT_OUT" pad="-"/>
 <contactref element="BAT_IN" pad="-"/>
 <contactref element="C3" pad="2"/>
@@ -1456,6 +1474,7 @@ design rules under a new name.</description>
 <via x="18.542" y="13.716" extent="1-16" drill="0.3556"/>
 <via x="12.7" y="11.43" extent="1-16" drill="0.3556"/>
 <via x="10.414" y="11.43" extent="1-16" drill="0.3556"/>
+<contactref element="OKI-78SR-5" pad="2"/>
 </signal>
 <signal name="N$32">
 <contactref element="U2" pad="19"/>
@@ -1673,20 +1692,22 @@ design rules under a new name.</description>
 <wire x1="17.4879" y1="10.4013" x2="17.3736" y2="10.5156" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$2" class="1">
-<contactref element="U3" pad="3"/>
 <contactref element="D1" pad="A"/>
 <wire x1="65.9511" y1="39.5478" x2="65.9511" y2="36.9189" width="0.4064" layer="1"/>
 <wire x1="64.8081" y1="40.6908" x2="65.9511" y2="39.5478" width="0.4064" layer="1"/>
 <wire x1="64.8081" y1="51.435" x2="64.8081" y2="40.6908" width="0.4064" layer="1"/>
 <wire x1="63.5508" y1="52.6923" x2="64.8081" y2="51.435" width="0.4064" layer="1"/>
-<wire x1="18.7452" y1="52.6923" x2="63.5508" y2="52.6923" width="0.4064" layer="1"/>
+<wire x1="18.7452" y1="52.6923" x2="19.05" y2="52.6923" width="0.4064" layer="1"/>
+<wire x1="19.05" y1="52.6923" x2="63.5508" y2="52.6923" width="0.4064" layer="1"/>
 <wire x1="17.4879" y1="51.435" x2="18.7452" y2="52.6923" width="0.4064" layer="1"/>
 <wire x1="17.4879" y1="48.3489" x2="17.4879" y2="51.435" width="0.4064" layer="1"/>
-<wire x1="20.2311" y1="45.6057" x2="17.4879" y2="48.3489" width="0.4064" layer="1"/>
-<wire x1="20.2311" y1="27.7749" x2="20.2311" y2="45.6057" width="0.4064" layer="1"/>
-<wire x1="18.5166" y1="26.0604" x2="20.2311" y2="27.7749" width="0.4064" layer="1"/>
 <wire x1="65.9511" y1="36.9189" x2="66.04" y2="36.81" width="0.4064" layer="1"/>
-<wire x1="18.5166" y1="26.0604" x2="18.415" y2="26.035" width="0.4064" layer="1"/>
+<contactref element="OKI-78SR-5" pad="3"/>
+<wire x1="17.145" y1="43.815" x2="17.78" y2="43.18" width="0.4064" layer="1"/>
+<wire x1="17.145" y1="51.435" x2="17.145" y2="43.815" width="0.4064" layer="1"/>
+<wire x1="18.415" y1="52.705" x2="17.145" y2="51.435" width="0.4064" layer="1"/>
+<wire x1="19.05" y1="52.705" x2="18.415" y2="52.705" width="0.4064" layer="1"/>
+<wire x1="19.05" y1="52.705" x2="19.05" y2="52.6923" width="0.4064" layer="1"/>
 </signal>
 </signals>
 </board>
